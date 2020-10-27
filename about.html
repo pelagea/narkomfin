@@ -6,23 +6,25 @@
     <title>О проекте</title>
     <style media="screen">
     html{
-      background: url("images/1440.jpg");
-    }
+      /* background: url("images/1440.jpg"); */
+      }
       body {
-        width: 1448px;
-        height: 3252px;
+        /* width: 1448px; */
+        /* height: 3252px; */
         background: rgba(255,255,255,.6);
         margin: 0 auto;
       }
       section{
         display: flex;
         justify-content: space-between;
+        padding-top: 60px;
       }
       section div{
         width: 50%;
         overflow: hidden;
+        vertical-align: top;
       }
-      section div:nth-of-type(2){
+      section div:nth-of-type(2) {
         margin-left: 80px;
       }
       section h1,
@@ -33,16 +35,54 @@
       }
       section h1 {
         font-size: 42px;
-        margin-top: 54px;
+        margin-top: 74px;
         line-height: 44px;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
       }
-      section p{
+      section p {
         font-size:26px;
         line-height:38px;
       }
-      section:nth-of-type(2) h1{
-        margin-left: 20px;
+      section:nth-of-type(2) h1,
+      section:nth-of-type(2) p {
+        margin-left: 0px;
+        width: 560px;
+      }
+      section:nth-of-type(2) h1 {
+        margin-top: 58px;
+      }
+      section:nth-of-type(3) h1{
+        margin-top: 80px
+      }
+      section:nth-of-type(3) img {
+        margin-top: 86px;
+      }
+      .bottom_block {
+        border-top: 1px solid #bbb;
+        text-align: center;
+        display: block;
+      }
+
+      .bottom_block h1,
+      .bottom_block p {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      .btn {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 20px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 15px 30px;
+        display: inline-block;
+        margin: 78px 10px;
+      }
+      .btn_black {
+        background: black;
+        color: white;
       }
     </style>
   </head>
@@ -70,6 +110,14 @@
         <h1>Наглядный пример, <br> чтобы учиться веб-вёрстке</h1>
         <p>Разработан для изучения основ веб-вёрстки, языка гипертекстовой размеки HTML и &nbsp; каскадных таблиц стилей CSS</p>
       </div>
+    </section>
+
+    <section>
+      <div class="">
+        <h1> Наглядный пример,<br>чтобы учиться веб-вёрстке</h1>
+        <p>Разработан для изучения основ веб-вёрстки, языка гипертекстовой разметки HTML и&nbsp; каскадных таблиц стилей CSS</P>
+          <a class="btn" href="#">Исходный код на GitHub</a>
+          <a class="btn btn_black" href="#">Курс в Школе Дизайна</a>
 
     </section>
   </body>
