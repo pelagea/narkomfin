@@ -1,0 +1,30 @@
+nav {
+  width: 250px;
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  padding: 30px;
+  opacity: .2;
+  transition: all .8s ease-out;
+}
+nav:hover {
+  opacity: 1;
+  transition: all .1s ease-out;
+}
+nav li {
+  list-style-type: none;
+  margin: 0 0 10px;
+  height: auto;
+}
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 15px;
+}
+nav > ul > li:first-child {
+font-weight: bold;
+}
+nav ul ul {
+  margin-left: 10px;
+  color: #999;
+}
